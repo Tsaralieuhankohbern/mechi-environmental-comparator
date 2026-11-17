@@ -1,0 +1,34 @@
+{
+  "name": "mechi-environmental-comparator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "build:single": "tsc -b && SINGLE_FILE=1 vite build",
+    "generate-data": "python3 tools/generate_synthetic.py",
+    "check": "tsx tests/engine.check.ts"
+  },
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "read-excel-file": "^9.3.17",
+    "write-excel-file": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.90.0",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
